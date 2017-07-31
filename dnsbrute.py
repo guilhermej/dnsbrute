@@ -19,7 +19,7 @@ except:
 
 # para cada linha da wordlist testa o dns
 for linha in linhas:
-    subdominio = linha + '.bancocn.com'
+    subdominio = linha + '.' + dominio
     try:
         respostas = dns.resolver.query(subdominio, 'a')
         for resultado in respostas:
