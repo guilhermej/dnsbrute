@@ -23,6 +23,6 @@ for linha in linhas:
     try:
         respostas = dns.resolver.query(subdominio, 'a')
         for resultado in respostas:
-            print subdominio, resultado
+            print(subdominio, resultado)
     except:
         pass
